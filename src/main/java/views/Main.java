@@ -6,6 +6,7 @@
  */
 package views;
 
+import models.ConexionBD;
 /**
  *
  * @author Edwin Ropain Espinosa
@@ -13,6 +14,8 @@ package views;
 public class Main {
 
     public static void main(String[] args) {
+        ConexionBD miConexionBD = new ConexionBD();
+        miConexionBD.EstablecerConexion();
 
     }
 }
