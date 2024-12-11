@@ -38,3 +38,6 @@ La aplicación está conectada a una base de datos local. Esta base de datos se 
 <p>
   Si observamos en el IDE ha descargado automáticamente el archivo que hará la conexión con la base de datos.
 </p>
+
+- Tecnología Java aplicada: Maven;
+- Servidor: Xampp;
