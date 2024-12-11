@@ -5,6 +5,7 @@ Esta es una aplicación de un login básico, en la cual, si el usuario ingresa l
 </p>
 
 ![Login](https://github.com/user-attachments/assets/870268f9-5cba-43d3-805e-44cc22544f1b)
+![Captura de pantalla 2024-12-09 194305](https://github.com/user-attachments/assets/01b156bf-9be1-4f8b-bfab-8a53dfc11613)
 
 <p>
 La aplicación está conectada a una base de datos local. Esta base de datos se comprende de una tabla llamada "login", la cual posee tres campos. El primer campo es el que tiene el código de cada registro, es de tipo entero, autoincremento y funciona como llave primaria.
