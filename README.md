@@ -9,3 +9,15 @@ La aplicación está conectada a una base de datos local. Esta base de datos se 
 </p>
 
 ## Pasos para la configuración de la base de datos
+
+<p>
+  1. Creamos una base de datos en el servidor local xampp. Esta base de datos se comprende de una tabla llamada "login" y la cual posee tres campos. El primer campo es el que tiene el código de cada registro, es de tipo entero, autoincremento y funciona como llave primaria.
+</p>
+
+<p>
+  2. Como segundo paso, debemos descargar el archivo de conexión a la base de datos. Esto lo podemos hacer ingresando a la página: https://mvnrepository.com/artifact/mysql/mysql-connector-java
+</p>
+
+<p>
+  3. Damos click en la versión más reciente y copiamos el código xml, luego nos dirigimos al archvi pom.xml y justo después de las etiquetas <packaging>jar</packaging> damos enter y creamos una etiqueta llama <dependencies> y dentro de esta pegamos el codigo.
+</p>
