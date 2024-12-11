@@ -31,3 +31,7 @@ La aplicación está conectada a una base de datos local. Esta base de datos se 
     <version>8.0.33</version>
   </dependency>
 </dependencies>
+```
+<p>
+  Si observamos en el IDE ha descargado automáticamente el archivo que hará la conexión con la base de datos.
+</p>
