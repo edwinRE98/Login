@@ -14,8 +14,9 @@ import models.ConexionBD;
 public class Main {
 
     public static void main(String[] args) {
-        ConexionBD miConexionBD = new ConexionBD();
-        miConexionBD.EstablecerConexion();
-
+        
+        Login miLogin = new Login();
+        miLogin.setVisible(true);
+        
     }
 }
