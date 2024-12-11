@@ -41,3 +41,4 @@ La aplicación está conectada a una base de datos local. Esta base de datos se 
 
 - Tecnología Java aplicada: Maven;
 - Servidor: Xampp;
+- java version "21.0.2" 2024-01-16 LTS;
