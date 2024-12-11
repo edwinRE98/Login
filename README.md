@@ -19,7 +19,7 @@ La aplicación está conectada a una base de datos local. Esta base de datos se 
 </p>
 
 <p>
-  3. Damos click en la versión más reciente y copiamos el código xml, luego nos dirigimos al archvi pom.xml y justo después de las etiquetas <packaging>jar</packaging> damos enter y creamos una etiqueta llama <dependencies> y dentro de esta pegamos el codigo.
+  3. Damos click en la versión más reciente y copiamos el código xml, luego nos dirigimos al archvi pom.xml y justo después de las etiquetas "<packaging>jar</packaging>" damos enter y creamos una etiqueta llama <dependencies> y dentro de esta pegamos el codigo.
 </p>
 
 ```xml
