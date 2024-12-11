@@ -21,4 +21,24 @@
         <maven.compiler.target>21</maven.compiler.target>
         <exec.mainClass>com.mycompany.login.Login</exec.mainClass>
     </properties>
+    
+    <build>
+     <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.2.0</version>
+            <configuration>
+                <archive>
+                    <index>true</index>
+                    <manifest>
+                        <mainClass>views.Main</mainClass>
+                    </manifest>
+                </archive>
+                </configuration>
+        </plugin>
+     </plugins>
+    </build>
+    
+    
 </project>

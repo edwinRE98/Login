@@ -5,6 +5,8 @@
 package views;
 
 import controllers.Controller_login;
+import java.awt.Image;
+import java.awt.Toolkit;
 
 /**
  *
@@ -18,8 +20,8 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         setLocationRelativeTo(null);
+        setTitle("Inicia sesión");
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -38,6 +40,7 @@ public class Login extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
