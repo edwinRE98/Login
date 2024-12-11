@@ -7,3 +7,5 @@ Esta es una aplicación de un login básico, en la cual, si el usuario ingresa l
 <p>
 La aplicación está conectada a una base de datos local. Esta base de datos se comprende de una tabla llamada "login", la cual posee tres campos. El primer campo es el que tiene el código de cada registro, es de tipo entero, autoincremento y funciona como llave primaria.
 </p>
+
+## Pasos para la configuración de la base de datos
