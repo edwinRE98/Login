@@ -11,6 +11,7 @@ public class ConexionBD {
     Connection conexion;
 
     public Connection EstablecerConexion() {
+        
         try {
             Class.forName("com.mysql.jdbc.Driver");
             conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/bd_login", "root", "");

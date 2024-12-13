@@ -17,16 +17,17 @@ public class Controller_login {
         try {
             ConexionBD miConexionBD = new ConexionBD();
             String consulta = "SELECT * FROM tb_usuarios WHERE tb_usuarios.usuario = (?) AND tb_usuarios.clave = (?)";
-            PreparedStatement ps = miConexionBD.EstablecerConexion().prepareStatement(consulta);
+            //Unimos la consulta con la conexión
+            PreparedStatement cn = miConexionBD.EstablecerConexion().prepareStatement(consulta);
 
             //Convertimos el tipo de dato JPasswordField a cadena de texto.
-            String claveCadena = String.valueOf(clave.getPassword());
+            String claveEnCadena = String.valueOf(clave.getPassword());
 
             //Capturamos los datos obtenidos de los parámetros.
-            ps.setString(1, usuario.getText());
-            ps.setString(2, claveCadena);
+            cn.setString(1, usuario.getText());
+            cn.setString(2, claveEnCadena);
 
-            ResultSet rs = ps.executeQuery();
+            ResultSet rs = cn.executeQuery();
 
             if (rs.next()) {
 

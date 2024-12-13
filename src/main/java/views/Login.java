@@ -16,7 +16,6 @@ public class Login extends javax.swing.JFrame {
         initComponents();
         setTitle("Inicia sesión");
         setLocationRelativeTo(null);
-        //Placeholder para los inputs
         TextPrompt placeholderUsuario = new TextPrompt(" nombre de usuario", inputUsuario);
         TextPrompt placeholderClave = new TextPrompt(" contraseña", inputClave);
     }
