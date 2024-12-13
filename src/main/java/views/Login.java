@@ -1,19 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package views;
 
 import controllers.Controller_login;
 import ficherosExternos.TextPrompt;
 import java.awt.Image;
 import java.awt.Toolkit;
+import javax.swing.ImageIcon;
 import javax.swing.WindowConstants;
 
-/**
- *
- * @author pc
- */
 public class Login extends javax.swing.JFrame {
 
     /**
@@ -22,12 +15,11 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         setTitle("Inicia sesión");
+        setLocationRelativeTo(null);
         //Placeholder para los inputs
         TextPrompt placeholderUsuario = new TextPrompt(" nombre de usuario", inputUsuario);
         TextPrompt placeholderClave = new TextPrompt(" contraseña", inputClave);
-        setLocationRelativeTo(null);
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
