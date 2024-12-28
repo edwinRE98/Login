@@ -17,6 +17,7 @@ public class Main {
         
         Login miLogin = new Login();
         miLogin.setVisible(true);
+        miLogin.setResizable(false);
         
     }
 }

@@ -16,9 +16,9 @@ public class Controller_login {
     public void ValidarUsuario(JTextField usuario, JPasswordField clave) {
         try {
             ConexionBD miConexionBD = new ConexionBD();
-            String consulta = "SELECT * FROM tb_usuarios WHERE tb_usuarios.usuario = (?) AND tb_usuarios.clave = (?)";
+            
             //Unimos la consulta con la conexión
-            PreparedStatement cn = miConexionBD.EstablecerConexion().prepareStatement(consulta);
+            PreparedStatement cn = miConexionBD.EstablecerConexion().prepareStatement("SELECT * FROM tb_usuarios WHERE tb_usuarios.usuario = (?) AND tb_usuarios.clave = (?)");
 
             //Convertimos el tipo de dato JPasswordField a cadena de texto.
             String claveEnCadena = String.valueOf(clave.getPassword());
@@ -27,13 +27,10 @@ public class Controller_login {
             cn.setString(1, usuario.getText());
             cn.setString(2, claveEnCadena);
 
-            ResultSet rs = cn.executeQuery();
+            ResultSet ejecucionSQL = cn.executeQuery();
 
-            if (rs.next()) {
-
-                Main miPrincipal = new Main();
+            if (ejecucionSQL.next()) {
                 Bienvenida miBienvenida = new Bienvenida();
-
                 miBienvenida.setVisible(true);
             } else {
                 JOptionPane.showMessageDialog(null, "       Usuario incorrecto");
